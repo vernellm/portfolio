@@ -1,0 +1,12 @@
+#
+# trace17.txt - Tests whether the shell can handle SIGTSTP and SIGINT
+#     signals that come from other processes instead of the terminal.
+#
+
+./mystop 2
+
+SLEEP 3
+
+jobs
+
+./myint 2

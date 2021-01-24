@@ -1,0 +1,13 @@
+#
+# trace14.txt - Restart every stopped process in process group
+#
+./mysplit 4 
+
+SLEEP 2
+TSTP
+
+jobs
+/bin/ps -o pid,ppid,ruser,stat,args -C mysplit
+fg %1
+/bin/ps -o pid,ppid,ruser,stat,args -C mysplit
+

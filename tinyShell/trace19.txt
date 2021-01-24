@@ -1,0 +1,6 @@
+#
+# trace19.txt - Tests whether the shell can properly
+#               redirect input
+#
+
+./myread 10 < myread.c

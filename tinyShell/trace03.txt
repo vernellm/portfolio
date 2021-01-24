@@ -1,0 +1,5 @@
+#
+# trace03.txt - Run a background job.
+#
+./myspin 1 &
+/bin/ls

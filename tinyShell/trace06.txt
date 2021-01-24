@@ -1,0 +1,11 @@
+#
+# trace06.txt - Run two background jobs and two foreground jobs.
+#
+./myspin 4 &
+/bin/ls
+./myspin 2 &
+/bin/ls
+jobs
+SLEEP 5
+jobs
+quit

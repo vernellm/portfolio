@@ -1,0 +1,16 @@
+#
+# trace11.txt - Process fg builtin command. 
+#
+./myspin 4 &
+
+SLEEP 1
+
+fg %1
+
+SLEEP 1
+TSTP
+
+jobs
+fg %1
+jobs
+

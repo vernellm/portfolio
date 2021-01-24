@@ -1,0 +1,24 @@
+#
+# trace15.txt - Simple error handling
+#
+./bogus
+./myspin 4 &
+
+SLEEP 1
+
+fg
+bg
+fg a
+bg a 
+fg 9999999 
+bg 9999999
+fg %2
+fg %1
+
+SLEEP 1
+TSTP
+
+bg %2
+bg %1
+jobs
+

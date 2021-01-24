@@ -1,0 +1,10 @@
+#
+# trace09.txt - Forward SIGTSTP only to foreground job.
+#
+./myspin 4 &
+./myspin 5 
+
+SLEEP 2
+TSTP
+
+jobs

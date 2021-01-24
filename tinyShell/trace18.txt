@@ -1,0 +1,10 @@
+#
+# trace18.txt - Tests whether the shell can properly
+#               redirect output
+#
+
+/bin/ls sdriver.pl tsh.c > test.out
+
+/bin/cat test.out
+
+/bin/rm test.out

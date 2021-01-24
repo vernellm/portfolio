@@ -1,0 +1,6 @@
+#
+# trace20.txt - I/O redirection, both input and output
+#
+
+./myread 40 < myread.c > /dev/null
+

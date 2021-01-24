@@ -1,0 +1,8 @@
+#
+# trace02.txt - Run a foreground job several times.
+#
+/bin/ls
+SLEEP 1
+/bin/ls
+SLEEP 1
+/bin/ls

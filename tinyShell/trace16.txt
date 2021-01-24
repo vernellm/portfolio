@@ -1,0 +1,29 @@
+#
+# trace16.txt - Putting it all together
+#
+
+./bogus
+./myspin 10
+
+SLEEP 1
+INT
+
+./myspin 3 &
+
+SLEEP 1
+
+./myspin 4 &
+
+jobs
+fg %1
+
+SLEEP 1
+TSTP
+
+jobs
+bg %3
+bg %1
+jobs
+fg %1
+quit
+

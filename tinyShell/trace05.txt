@@ -1,0 +1,14 @@
+#
+# trace05.txt - Process jobs builtin command, before and after jobs finish.
+#
+./myspin 1 &
+./myspin 3 &
+jobs
+
+SLEEP 2
+
+jobs
+
+SLEEP 2
+
+jobs

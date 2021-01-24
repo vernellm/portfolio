@@ -1,0 +1,6 @@
+#
+# trace04.txt - Process jobs builtin command.
+#
+./myspin 2 &
+./myspin 3 &
+jobs
